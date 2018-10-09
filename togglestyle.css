@@ -1,0 +1,208 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/****  Reset Ends  ****/
+
+body {
+margin:0;
+}
+
+
+
+.header-demo {
+  width:100%;
+  height: 3em;
+  background:#0E1921 /* url(img/ltgreywaterpaper.png) */;
+position:fixed;
+top:0;
+
+}
+.header-demo h3 {
+  float: left;
+  color:#fff;
+  margin: 10px 13px;
+  font-size:1.5em;
+  font-weight:1;
+}
+.menu-link {
+  color: white;
+  text-shadow: none;
+  background-color:;
+  padding:0px;
+  height:;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  z-index: 1001;
+  list-style-type:none;
+ text-decoration: none;
+}
+.menu-link:hover {
+ 
+  color:red;
+}
+
+.menu {
+height:auto;
+}
+
+.menu li a {
+  color: #fff;
+  text-align:center;
+  text-decoration: none;
+  background-color: rgba(14,25,33,1);
+  display: inline-block;
+  height:2em;
+  line-height:1em;
+  padding:.5em;
+  border-bottom: 0px solid #333333;
+  width: 100%;
+  float:;
+}
+.menu li a:hover {
+  color: rgba(14,25,33,1);
+  background-color: #fff;
+}
+body:not(:target) #menu {
+  margin: 0;
+  padding-top: 3em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+}
+body:not(:target) #menu li {
+  width: 100%;
+  height: 0;
+  line-height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.25s;
+  -moz-transition: height 0.25s;
+  -o-transition: height 0.25s;
+  transition: height 0.25s;
+}
+body:not(:target) #menu:target {
+  z-index: 1001;
+}
+body:not(:target) #menu:target li {
+  height: 2em;
+  line-height: auto;
+  overflow: visible;
+  -webkit-transition: height 0.25s;
+  -moz-transition: height 0.25s;
+  -o-transition: height 0.25s;
+  transition: height 0.25s;
+}
+body:not(:target) #menu:target .back {
+  height: 0;
+  line-height: 0;
+}
+body:not(:target) #menu:target .back a {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  height: auto;
+  position: absolute;
+  top: -101em;
+  bottom: -101em;
+  left: 0;
+  right: 0;
+  text-indent: -999em;
+  z-index: -1;
+}
+
+#primary {margin-top:3.2em;}
+
+
+@media (min-width: 41.26em) {
+
+	.header-demo h3 {
+  float: left;
+  color:#fff;
+  margin: 5px 13px;
+  font-size:2em;
+  font-weight:300;
+}
+
+  .menu-link {
+    display: none;
+  }
+  body:not(:target) #menu {
+    padding-top: 0;
+  }
+  body:not(:target) #menu li {
+    display: inline;
+    position:absolute;
+    border: none;
+    right:0;
+  }
+  body:not(:target) #menu li a {
+    color:yellow;
+    font-weight: bold;
+    text-shadow: inherit;
+    line-height: 1em;
+    padding: .75em;
+    height: 2em;
+    width: auto;
+    border: none;
+    background-color: transparent;
+  }
+  body:not(:target) #menu li a:hover {
+    color: green;
+  }
+  body:not(:target) #menu .back {
+    display: none;
+  }
+  h1:after {
+    content: "Resize your browser window to see the Responsive Toggle Navigation in action.";
+    display: block;
+    margin-top: 1em;
+    font-size: .7em; 
+  }
+}

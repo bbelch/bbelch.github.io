@@ -1,0 +1,737 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<title>  Brian Belch |  Writing for the Web </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" type="text/css" href="../grammar.css" media="all" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	
+	<script type="text/javascript">
+    $(document).ready(function() {
+        $("#noun").click(function() {
+            $(".nounmod").slideToggle("fast");
+        });
+        $(".close1").click(function() {
+            $(".nounmod").slideToggle("fast");
+        });
+        $("#ab").click(function() {
+            $(".ab").slideToggle("fast");
+        });
+        $(".close2").click(function() {
+            $(".ab").slideToggle("fast");
+        });
+        $("#plural").click(function() {
+            $(".plural").slideToggle("fast");
+        });
+        $(".close3").click(function() {
+            $(".plural").slideToggle("fast");
+        });
+        $("#possessive").click(function() {
+            $(".possessive").slideToggle("fast");
+        });
+        $(".close4").click(function() {
+            $(".possessive").slideToggle("fast");
+        });
+        $("#collective").click(function() {
+            $(".collective").slideToggle("fast");return false;
+        });
+        $(".close5").click(function() {
+            $(".collective").slideToggle("fast");
+            return false;
+        });
+        $("#appositive").click(function() {
+            $(".appositive").slideToggle("fast");return false;
+        });
+        $(".close6").click(function() {
+            $(".appositive").slideToggle("fast");
+            return false;
+        });
+        $("#gerund").click(function() {
+            $(".gerund").slideToggle("fast");return false;
+        });
+        $(".close7").click(function() {
+            $(".gerund").slideToggle("fast");
+            return false;
+        });
+    });
+    
+	</script>
+
+	<style type="text/css">
+	.nounmod {
+	display:block;
+    position:absolute;
+    width:100%;
+    margin:0px auto;
+    padding:5em 1em;
+    left:0;
+    top:0;
+    height:200%;
+    background:rgba(0,0,0,.7);
+    display: none;
+	}
+	
+	.nounmod p {
+	position:;
+	margin:20px;
+	padding:10px;
+	top:50%;
+	left:1%
+	width:80%;
+	color:white;
+	background:#5d8aa8;
+	text-align:center;
+	font-size:1.2em;	
+	}
+	
+	#noun span{
+	text-decoration:underline;
+	}
+	
+	.nounmod span{
+	text-decoration:underline;
+	}
+	
+	.ab {
+	display:block;
+    position:absolute;
+    width:80%;
+    margin:0px auto;
+    padding:5em 1em;
+    left:0;
+    top:0;
+    width:100%;
+    height:200%;
+    background:rgba(0,0,0,.5);
+    display: none;
+    text-align:center;
+	}
+	
+	.ab p {
+	position:;
+	margin:20px;
+	padding:10px;
+	top:50%;
+	left:10%
+	width:80%;
+	color:white;
+	background:#5d8aa8;
+	text-align:center;
+	font-size:1.2em;	
+	}
+	
+	
+	#ab span{
+	text-decoration:underline;
+	}
+	.ab span{
+	text-decoration:underline;
+	}
+	
+	
+	.plural {
+	display:block;
+    position:absolute;
+    width:100%;
+    margin:0px auto;
+    padding:5em .5em;
+    left:0;
+    top:0;
+    width:100%;
+    height:200%;
+    background:rgba(0,0,0,.5);
+    display: none;
+    text-align:center;
+	}
+	
+	.plural p {
+	position:;
+	margin:20px;
+	padding:0px;
+	top:30%;
+	left:0;
+	width:;
+	color:white;
+	background:;
+	font-weight:100;
+	}
+	
+	.plural article {
+	background:#5d8aa8;
+	}
+	
+	#pluraltab {
+	margin:0px auto;
+	width:90%;
+	}
+	
+	#pluraltab, #pluraltab tr,#pluraltab td  {
+	border:1px solid #fff; 
+	}
+	
+	#pluraltab tr:first-child {
+	background:#162733;
+	}
+	
+	.possessive {
+	display:block;
+    position:absolute;
+    width:70%;
+    margin:0px auto;
+    padding:1em;
+    left:0;
+    top:0;
+    width:100%;
+    height:200%;
+    background:rgba(0,0,0,.8);
+    display: none;
+	}
+	
+	.possessive p {
+	position:;
+	margin:20px;
+	padding:0px;
+	top:30%;
+	left:0;
+	width:;
+	color:white;
+	background:;
+	font-weight:100;
+	
+	}
+	
+	.collective {
+	display:block;
+    position:absolute;
+    width:70%;
+    margin:0px auto;
+    padding:1em;
+    left:0;
+    top:0;
+    width:100%;
+    height:300%;
+    background:rgba(0,0,0,.8);
+    display: none;
+	}
+	
+	
+	.collective p {
+	clear:both;
+	position:relative;
+	margin:20px;
+	padding:10px;
+	top:40%;
+	left:;
+	width:80%;
+	color:white;
+	background:#5d8aa8;
+	}
+	
+	
+	
+	
+	.appositive {
+	display:block;
+    position:absolute;
+    width:70%;
+    margin:0px auto;
+    padding:1em;
+    left:0;
+    top:0;
+    width:100%;
+    height:400%;
+    background:rgba(0,0,0,.8);
+    display: none;
+	}
+	
+	
+	.appositive p {
+	clear:both;
+	position:relative;
+	margin:20px;
+	padding:10px;
+	top:50%;
+	left:;
+	width:80%;
+	color:white;
+	background:#5d8aa8;
+	}
+	
+	.gerund {
+	display:block;
+    position:absolute;
+    width:70%;
+    margin:0px auto;
+    padding:1em;
+    left:0;
+    top:0;
+    width:100%;
+    height:400%;
+    background:rgba(0,0,0,.8);
+    display: none;
+	}
+	
+	
+	.gerund p {
+	clear:both;
+	position:relative;
+	margin:20px;
+	padding:10px;
+	top:50%;
+	left:4%;
+	width:80%;
+	color:white;
+	background:#5d8aa8;
+	font-weight:100;
+	}
+	
+	.close1, .close2, .close3, .close4, .close5, .close6, .close7, .close8 {
+	display:block;
+	width:80px;
+	margin:20px auto 10px auto;
+	text-align:center;
+	font-size:1.5em;
+	border:opx solid #fff;
+	box-shadow:1px 1px 2px #5d8aa8;
+	background:#5d8aa8;
+	border-radius:2px;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+	font-weight:100;
+	}
+	
+	.close1:hover, .close2:hover, .close3:hover, .close4:hover, .close5:hover, .close6:hover, .close7:hover, .close8:hover {
+	color:lightblue;
+	}
+	
+	</style>
+	
+	
+	
+</head>
+<body id="page" >
+    <header role="banner" class="header">
+         <nav>
+         		<a href="#nav" class="nav-toggle">&#9776;</a>
+               	<ul class="nav" id="nav">
+                    
+                    <li class="lscreen"><a href="/pages/classroom.html">Classroom</a></li>
+                    <li class="lscreen"><a href="/pages/web.html">Web</a></li>
+                    <li class="lscreen"><a href="/pages/blog.html">Blog</a></li>
+                    <li class="lscreen"><a href="/pages/about.html">About</a></li>
+                    <!-- <li class="lscreen"><a href="/contact/">Contact</a></li> -->
+                    <li><a href="#page" class="top">Top</a></li>
+               	</ul>
+               
+          </nav>
+          <h1 class="logo"><a href="index.html">justgrammar</a></h1>
+    </header>
+    <div class="main" role="main">        <header class="banner">
+             <article class="jg"><img src="../../img/justgrammar.png"><h2>Noun:<span style="color:;"></span> a <span style="color:#fff;">person,</span> <span style="color:#5d8aa8">place,</span> thing, <span style="color:#fff;">or idea</span></h2>
+        <h5><span style="display:none;color:red;line-spacing:.5em;">brother, athlete, neighborhood, cafe, book, pride, democracy</span></h5></article>
+        </header>
+        <div class="content">
+	        <ul class="grid gridlg">
+	        	        
+			        <li class="gridli">
+						<a href="#" id="noun" class="block-link">
+		                    <h3></h3>
+		                    <article class="gridliintro">
+		                    <img class="butt" src="../../img/noun2.png">
+		                    <!--<div id="nounbutton" class="butt">this is button</br></br></div>
+		                    --><p>
+								<span>Common nouns</span> identify any person, place, thing or idea or <b>unnamed</b> nouns.</br>
+                            	<span>Proper nouns</span> identify a specific person, place, thing or idea or <b>named</b> noun.
+                            </p> 
+                            </article>          
+		                </a>
+		            	<div class="nounmod">
+		            		<p>
+		                		<span>Common examples:</span></br>  computer, car, game, girl, love, freedom</br>
+		                		<span>Proper examples:</span></br> Ford Explorer, Lord of the Rings, Brad Pitt, Indianapolis</br> 
+		                		<a class="close1" href="#" >close</a>
+		                	</p>
+		                </div>
+					</li>
+			        
+			        <li class="gridli">
+						<a href="#" id="ab" class="block-link">
+		                    <h3>Abstract/Concrete</h3>
+		                    <article class="gridliintro">
+		                    <p><span>Abstract nouns</span> identify ideas, feelings, or qualities that can not be seen or touched.</br>
+		                    <span>Concrete nouns</span> identify nouns you can see, taste, hear, smell or touch
+		                    </p>   										
+                            </article>
+                       </a>
+		                <div class="ab">
+		                	<p>
+		                		<span>Abstract examples:</span></br> love, hate, courage, bravery, fear, history, truth. </br>
+		                		<span>Concrete examples:</span></br> car, book, movie, actor, mayor, athlete, city     										
+		                		<a class="close2" href="#" >close</a>
+		                	</p>
+		                </div>
+					</li>
+			        					
+			        <li class="gridli">
+						<a href="#" id="plural" class="block-link">
+		                    <h3>Plural</h3>
+		                    <article class="gridliintro">
+		                    <p><u>Plural nouns</u> identify one or more nouns.
+		                    </br>For most plural nouns you simply add  -s, but for others you may add -es or -ies <span style="color:red;font-size:1.2em"(click to see chart)
+									</span></p>  										
+								
+                            </article></a>
+                            <div class="plural">
+                            	<article>
+                            	<p>
+                            	<!-- <table id="plural" width="100%" cellspacing="1" cellpadding="2" border="0" style="border-collapse: collapse" bordercolor="black">
+                                          <tbody style="font-size:.8em;">
+                                          <tr style="background:yellow;"><p align="center"><font color="#ffffff"></font>
+                                            
+                                        	</p>
+                                          </tr>
+                                          <tr>
+                                            <td bgcolor="#0066ff" align="center" width="33%">
+                                            <p align="center"><b><font color="#ffffff" style="font-size:1.6em;">Nouns ending in: </font>
+                                            </b>
+                                            </p></td>
+                                            <td bgcolor="#ff0066" align="center" width="33%">
+                                            <p align="center"><b><font color="#ffffff" style="font-size:1.6em;">Add</font></b></p></td>
+                                            <td bgcolor="#006600" align="center" width="34%">
+                                            <p align="center"><b><font color="#ffffff" style="font-size:1.6em;">Example</font></b></p></td>
+                                          </tr>
+                                          <tr>
+                                            <td bgcolor="#0066ff" valign="top" width="33%">
+                                            <p align="center"><b><font color="#ffffff">-s,-ss, -zz, -ch, -sh, -x </font>
+                                            </b>
+                                            </p></td>
+                                            <td bgcolor="#ff0066" valign="top" width="33%">
+                                            <p align="center"><b><font color="#ffffff">&nbsp;add -es</font></b></p></td>
+                                            <td bgcolor="#006600" valign="top" width="34%">
+                                            <p align="center"><b><font color="#ffffff">buses, buzzes, foxes </font>
+                                            </b>
+                                            </p></td>
+                                          </tr>
+                                          <tr>
+                                            <td bgcolor="#0066ff" valign="top" width="33%">
+                                            <p align="center"><b><font color="#ffffff">-o preceded by a vowel</font></b></p></td>
+                                            <td bgcolor="#ff0066" valign="top" width="33%">
+                                            <p align="center"><b><font color="#ffffff">&nbsp;add -s </font></b></p></td>
+                                            <td bgcolor="#006600" valign="top" width="34%">
+                                            <p align="center"><b><font color="#ffffff">studios, stereos</font></b></p></td>
+                                          </tr>
+                                          <tr>
+                                            <td bgcolor="#0066ff" valign="top" rowspan="2" width="33%">
+                                            <p align="center"><b><font color="#ffffff">-o preceded by a consonant</font></b></p>
+                                            <p align="center"><b><font color="#FFFFFF">&nbsp;</font></b></p></td>
+                                            <td bgcolor="#ff0066" valign="top" width="33%">
+                                            <p align="center"><b><font color="#ffffff">Usually add -es</font></b></p></td>
+                                            <td bgcolor="#006600" valign="top" width="34%">
+                                            <p align="center"><b><font color="#ffffff">heroes, potatoes </font></b></p></td>
+                                          </tr>
+                                          <tr>
+                                            <td bgcolor="#ff0066" valign="top" width="33%">
+                                            <p align="center"><b><font color="#ffffff">Sometimes add -s </font>
+                                            </b>
+                                            </p></td>
+                                            <td bgcolor="#006600" valign="top" width="34%">
+                                            <p align="center"><b><font color="#ffffff">zeros, photos, pianos</font></b></p></td>
+                                          </tr>
+                                          <tr>
+                                            <td bgcolor="#0066ff" valign="top" width="33%">
+                                            <p align="center"><b><font color="#ffffff">-y, preceded by a vowel</font></b></p></td>
+                                            <td bgcolor="#ff0066" valign="top" width="33%">
+                                            <p align="center"><b><font color="#ffffff">add -s </font></b></p></td>
+                                            <td bgcolor="#006600" valign="top" width="34%">
+                                            <p align="center"><b><font color="#ffffff">days, donkeys, keys</font></b></p></td>
+                                          </tr>
+                                          <tr>
+                                            <td bgcolor="#0066ff" valign="top" width="33%">
+                                            <p align="center"><b><font color="#ffffff">-y preceded by a consonant</font></b></p></td>
+                                            <td bgcolor="#ff0066" valign="top" width="33%">
+                                            <p align="center"><b><font color="#ffffff">usually change -y to -i and add -es</font></b></p></td>
+                                            <td bgcolor="#006600" valign="top" width="34%">
+                                            <p align="center"><b><font color="#ffffff">cities, dairies, pennies</font></b></p></td>
+                                          </tr>
+                                          <tr>
+                                            <td bgcolor="#0066ff" valign="top" rowspan="2" width="33%">
+                                            <p align="center"><b><font color="#ffffff">-f or -fe </font>
+                                            </b>
+                                            </p></td>
+                                            <td bgcolor="#ff0066" valign="top" width="33%">
+                                            <p align="center"><b><font color="#ffffff">Usually change -f to -v and add -es </font>
+	                                        </b></p></td>
+                                            <td bgcolor="#006600" valign="top" width="34%">
+                                            <p align="center"><b><font color="#ffffff">leaves, lives, calves</font></b></p></td>
+                                          </tr>
+                                          <tr>
+                                            <td bgcolor="#ff0066" valign="top" width="33%">
+                                            <p align="center"><b><font color="#ffffff">Sometimes add -s </font>
+                                            </b>
+                                            </p></td>
+                                            <td bgcolor="#006600" valign="top" width="34%">
+                                            <p align="center"><b><font color="#ffffff">roofs, surfs, beliefs</font></b></p></td>
+                                          </tr>
+                                        </tbody></table>
+                           		--><table id="pluraltab">
+    <tbody>
+    	<tr>
+            <td >
+                Nouns ending in:
+            </td>
+            <td>
+                Add
+            </td>
+            <td>
+            	Example
+            </td>
+        </tr>
+        <tr>
+            <td>
+                -s,-ss, -zz, -ch, -sh, -x
+            </td>
+            <td>
+            	&nbsp;add -es
+            </td>
+            <td>
+            	buses, buzzes, foxes
+            </td>
+        </tr>
+        <tr>
+        	<td>
+        		-o preceded by a vowel
+        	</td>
+        	<td>
+        		&nbsp;add -s
+        	</td>
+        	<td>
+        		studios, stereos
+        	</td>
+        </tr>
+        <tr>
+        	<td>
+        		-o preceded by a consonant
+        	</td>
+            <td>
+                Usually add -es
+            </td>
+            <td>
+            	heroes, potatoes
+            </td>
+        </tr>
+        <tr>
+        	<td>
+        		-o preceded by a consonant #2
+        	</td>
+        	<td>
+        		Sometimes add -s
+        	</td>
+        	<td>
+        		zeros, photos, pianos
+        	</td>
+        </tr>
+        <tr>
+        	<td>
+        		-y, preceded by a vowel
+        	</td>
+        	<td>
+        		add -s
+        	</td>
+        	<td>
+        		days, donkeys, keys
+        	</td>
+        </tr>
+        <tr>
+        	<td>
+        		-y preceded by a consonant
+        	</td>
+        	<td>
+        		usually change -y to -i and add -es
+        	</td>
+            <td>
+            	cities, dairies, pennies
+            </td>
+        </tr>
+        <tr>
+        	<td>
+                -f or -fe
+            </td>
+            <td>
+            	Usually change -f to -v and add -es
+            </td>
+            <td>
+            	leaves, lives, calves
+            </td>
+        </tr>
+        <tr>
+        	<td>
+                -f or -fe #2
+            </td>
+        	<td>
+        		Sometimes add -s
+        	</td>
+        	<td>
+        		roofs, surfs, beliefs
+        	</td>
+        </tr>
+    </tbody>
+</table>
+                           		<a class="close3" href="#" >close</a>
+                            	</article>
+                            	</p>
+                            </div>
+					</li>
+			        
+			        
+			        <li class="gridli">
+						<a href="#" id="possessive" class="block-link">
+		                    <h3>Possessive</h3>
+		                    <article class="gridliintro">
+		                    <p>
+                            	<u>Possessive nouns</u> show ownership or possession.  To form the possessive form of a noun, the writer must add either an 's or simply an ' depending on how that noun ends.
+                            </p>										
+								
+                            </article></a>
+                            <div class="possessive">
+                            	<p><a class="close4" href="#" ></a>
+                            	</p>
+                            	<table id="possessive" width="100%" cellspacing="1" cellpadding="2" border="0" style="border-collapse: collapse; border:rgba(0,0,0,.5)">
+                                          <tbody style="font-size:1em;color:#fff;">
+								
+	                                          <tr><p align="center"><font color="#ffffff"><h5></h5></font></p>
+                                          </tr>
+	                                          <tr>
+		                                          <td width="180" align="center" bgcolor="#0066FF" width="34%">
+		                                          <p>Nouns ending in:</p></td>
+		                                          <td width="122" align="center" bgcolor="#ff0066"width="33%">
+		                                           <p>Add </p></td>
+		                                          <td width="277" align="center" bgcolor="#006600"width="33%">
+		                                           <p>Example </p></td>
+	                                          </tr>
+	                                          <tr> 
+	                                          	<td width="180" bgcolor="#0066FF" align="center" width="34%">
+		                                           <p>Most singular nouns </p></td>
+		                                          <td width="122" bgcolor="#ff0066" align="center"width="33%">
+		                                           <p>add 's</p> </td>
+		                                          <td width="277" bgcolor="#006600" align="center"width="33%">
+		                                           <p>John<b>'s</b> books are new. </p></td>
+	                                          </tr>
+	                                          <tr>
+		                                          <td width="180" bgcolor="#0066FF" align="center" width="34%">
+		                                           <p>Singular nouns ending in &quot;s&quot; </p></td>
+		                                          <td width="122" bgcolor="#ff0066" align="center" width="33%">
+		                                           <p>add 's </p></td>
+		                                          <td width="277" bgcolor="#006600" align="center" width="33%">
+		                                           <p>The bus<b>'s</b> tires are flat. </p></td>
+	                                          </tr>
+	                                          <tr>
+		                                          <td width="180" bgcolor="#0066FF" align="center" width="34%">
+		                                           <p>Plural nouns ending in &quot;s&quot; </p></td>
+		                                          <td width="122" bgcolor="#ff0066" align="center" width="33%">
+		                                           <p>add an ' </p></td>
+		                                          <td width="277" bgcolor="#006600" align="center" width="33%">
+		                                           <p>The heroes<b>'</b> banquet is tonight at 9:00. </p></td>
+	                                          </tr>
+	                                          <tr>
+		                                          <td width="180" bgcolor="#0066FF" align="center" width="34%">
+		                                           <p>Plural nouns not ending in &quot;s&quot; </p></td>
+		                                          <td width="122" bgcolor="#ff0066" align="center" width="33%">
+		                                           <p>Sometimes add 's </p></td>
+		                                          <td width="277" bgcolor="#006600" align="center" width="33%">
+		                                           <p>The men<b>'s</b> room is located on the 3rd floor.</p> </td>
+	                                          </tr>
+                                          </table>
+                                <p><a class="close4" href="#" >close</a>
+                            	</p>
+                    
+                                        
+                            
+                            
+                            
+                            
+                            
+                            </div>
+					</li>
+			        
+			        <li class="gridli">
+						<a href="#" id="collective" class="block-link">
+		                    <h3>Collective</h3>
+		                    <article class="gridliintro">
+		                    <p>
+								<u>Collective nouns</u> identify groups of people or things. Most collective nouns are singular; however, collective nouns can take either a singular or plural verb depending on how it is used in the sentence. The noun is singular when all members of the group act as a single unit, but it is plural if they do not act as a single unit. Click for examples<br/>
+                                	
+							</p>
+                            </article>          
+		                </a>
+		            	<div class="collective">
+		            		
+		            			<p class="colmodal"><a class="close5" href="#" >close</a>
+                                 <br>For example:<br/>
+                                (singular)The team shares the field with its opponent.</br>
+                                (singular)The committee discusses their reactions. <br/>
+                                (plural)The committee disagree among themselves. 
+                                </p> 
+                                
+                        </div>
+					</li>
+			        
+			        <li class="gridli">
+						<a href="#" id="appositive" class="block-link">
+		                    <h3>Appositive</h3>
+		                    <article class="gridliintro">
+		                    <u>Appositives</u>, or Appositive phrases, rename nouns to give a clear understanding of the identification of the noun.
+
+                                        The noun is singular when all members of the group act as a single unit, but it is plural if they do not act as a single unit. For examples click<br/>
+                                        
+									
+                            </article>          
+		                </a>
+		            	<div class="appositive">
+		            		
+		            			<p><a class="close6" href="#" >close</a>
+		            			</br>For example:<br/>
+                                     Ms. Vb, the <u>math teacher</u>, explores math using real world examples and applications.
+                                
+                        </div>
+					</li>
+			        
+			        <li class="gridli">
+						<a href="#" id="gerund" class="block-link">
+		                    <h3>Gerund</h3>
+		                     <article class="gridliintro">
+		                    <u>Gerunds</u>, or Gerund phrases, are verbs ending in "-ing" which act as nouns.  They occur when and action becomes an activity. For examples click<br/>     	</article>
+		                </a>
+					
+					<div class="gerund">
+		            		
+		            			<p><a class="close7" href="#" >close</a>
+		            			<br/>For example:<br/>
+                                	Claire <u>walks</u> for exercise. </br>
+                                	<u>Walking</u> for exercise is healthy.</br>
+                                	The verb "walks" becomes the activity of "walking" in the second sentence and has become the subject of the sentence.
+                                </p>	
+					</div>
+					</li>
+				    </ul>
+				        
+				        
+         </div><!--end content-->
+</div><!--End role=main-->
+<footer class="footer">
+     <a href="#page" class="back-to-top">Back to Top</a>
+     <div class="footerbg">
+     	<p>Designed and adapted by <a href="mailto:bbelch@me.com">brian J belch</a> 2014</p>
+     </div>
+     <nav>
+	       <ul class="navfoot">
+	            <li><a href="/web/">Classroom</a></li>
+	            <li><a href="/blog/">Web</a></li>
+	            <li><a href="/speaking/">Blog</a></li>
+	            <li><a href="/about/">About</a></li>
+	       </ul>
+	  </nav>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+<SCRIPT language=JavaScript>
+										 <!--
+
+										 var numQues = 10;
+
+										 var answers = new Array(10);
+										 answers[0] = "b";
+										 answers[1] = "a";
+										 answers[2] = "a";
+										 answers[3] = "b";
+										 answers[4] = "b";
+										 answers[5] = "b";
+										 answers[6] = "b";
+										 answers[7] = "a";
+										 answers[8] = "b";
+										 answers[9] = "b";
+
+										 function getScore(form) {
+  										 var score = 0;
+
+  										 for (i=0; i<numQues; i++) {
+    										 if (form.elements[i].value == answers[i]) {
+      										 score++;
+    										 }
+  										 }
+
+  										 score = Math.round(score/numQues*100);
+  										 form.percentage.value = score + "%";
+
+  										 var correctAnswers = "";
+  										 for (i=1; i<=numQues; i++) {
+    										 correctAnswers += i + ". " + answers[i-1] + "\r\n";
+  										 }
+  										 form.solutions.value = correctAnswers;
+
+										 }
+
+										 // -->
+										 </SCRIPT>
+										 <br/>
+										 <table id="quiz" width="98%" cellspacing="1" cellpadding="2" border="1" style="border-collapse: collapse" bordercolor="white">
+                                          <tbody style="font-size:85%;">
+										 <!--<table border="0" width="98%" id="quiz" style="border-collapse: collapse" bordercolor="white"> -->
+											 <tr>
+												 <td>
+												 <h2 align="left"><font color="green">Adjective or Adverb  Quiz</font></h2>
+												 <p>&nbsp;</p>
+											     <p>Write the letter of the term that best describes each word or phrase.</p>
+											     
+												 <!--<p><font color="green"><b>a. Common <br/>
+												 b. Proper<br/>
+												 c. Collective<br/>
+												 d. Compound<br/>
+												 e. Plural
+												 </font> -->
+												 </td>		 
+											</tr>
+</table>
+		                                  <FORM name=quiz>
+										  <p align="left">
+										  <INPUT size=1 name=q1> 
+										  1.<span> Grandpa Todd's knee <u>always</u> predicts the day's weather.<br>
+										  <font style="color:green; font-size:.7em;"><b>a. adjective b. adverb </font></span><br/>
+										  <br/>
+										  <INPUT size=1 name=q2> 2.<span> An <u>outlandish</u> sketch of an imaginary Martian amused the audience. <br>
+										  <font style="color:green; font-size:.7em;"><b>a. adjective b. adverb </font></span><br/><br/>
+	                                      <INPUT size=1 name=q3> 
+	                                      3.<span> The 1% of the <u>wealthiest</u> Americans are upset over the new proposed taxes.<br>
+										  <font style="color:green; font-size:.7em;"><b>a. adjective b. adverb </font></span><br/><br/>
+	                                      <INPUT size=1 name=q4> 
+	                                      4.<span>Pickett led his brigade in the <u>most</u> daring charge at Gettysburg against the staunchest defense.<br>
+										  <font style="color:green; font-size:.7em;"><b>a. adjective b. adverb </font></span><br/><br/>
+			                              <INPUT size=1 name=q5> 
+			                              5.<span> <u>Occasionally</u> the books on the that shelf are rotated with new ones.<br>
+										  <font style="color:green; font-size:.7em;"><b>a. adjective b. adverb </font></span><br/><br/>
+			                              <INPUT size=1 name=q6> 
+			                              6.<span> After a long period of silence, the press secretary  <u>usually</u> became loquacious.<br>
+										  <font style="color:green; font-size:.7em;"><b>a. adjective b. adverb </font></span><br/><br/>
+		                                  <INPUT size=1 name=q7> 
+		                                  7.<span> Velazquez drew <u>silently</u>, making many drawings.<br>
+										  <font style="color:green; font-size:.7em;"><b>a. adjective b. adverb </font></span><br/><br/>
+			                              <INPUT size=1 name=q8> 
+			                              8.<span> Throughout the hike, Sydney scaled the <u>jagged</u> rocks easily..<br>
+										  <font style="color:green; font-size:.7em;"><b>a. adjective b. adverb </font></span><br/><br/>
+			                              <INPUT size=1 name=q9> 
+			                              9.<span> Who are the girls in the <u>unusually</u> red blouses?<br>
+										  <font style="color:green; font-size:.7em;"><b>a. adjective b. adverb </font></span><br/> <br/>
+			                              <INPUT size=1 name=q10> 
+			                              10.<span> <u>Earnestly</u> waiting for the class to settle, Mr. B finally explained those directions.<br>
+										  <font style="color:green; font-size:.7em;"><b>a. adjective b. adverb </font></span></p>
+			                              <P align="left">
+			                              <INPUT onclick=getScore(this.form) type=button value="Get score">
+			                              <INPUT type=reset value=Clear>
+			                              <P align="left">Score =&nbsp;<INPUT size=5 name=percentage> <br/>
+			                              <!--Correct answers:<br>
+			                              <TEXTAREA name=solutions rows=4 wrap=virtual cols=20></TEXTAREA>-->
+</FORM> 
+
+
+</body>
+</html>

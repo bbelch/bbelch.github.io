@@ -1,0 +1,105 @@
+<html>
+<head>
+<meta rel="author" href="http://Crunchify.com" content="">
+ 
+<script type="text/javascript"
+    src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".flip").click(function() {
+            $(".panel").slideToggle("slow");
+        });
+        $(".flip2").click(function() {
+            $(".panel2").slideToggle("slow");
+        });
+        $(".flip3").click(function() {
+            $(".panel3").slideToggle("slow");
+        });
+        $(".flip4").click(function() {
+            $(".panel4").slideToggle("slow");
+        });
+    });
+    
+</script>
+
+
+<!-- $('#para1').addClass('highlight'); -->
+
+
+<style type="text/css">
+
+ul {list-style-type:none;display:inline-block;width:90%;}
+li {display:inline;width:25%;float:left;}
+
+
+
+div.panel,p.flip,div.panel2,p.flip2,div.panel3,p.flip3,div.panel4,p.flip4 {
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+    background: #cbc;
+    border: solid 1px #fff;
+    width:;
+}
+ 
+div.panel,div.panel2,div.panel3,div.panel4 {
+    display:block;
+    position:absolute;
+    width:100%;
+    margin:0px auto;
+    left:0;
+    height: 100px;
+    display: none;
+}
+</style>
+</head>
+ 
+<body>
+	<ul>
+		<li>
+  <p class="flip">Click here to Show/Hide Panel</p>
+    <div class="panel">
+        <p>This is simple jQuery Show/Hide Example by Crunchify...</p>
+        <p>Click below Show/Hide again to Toggle visibility...</p>
+    </div>
+ </li>
+ <li>
+  <p class="flip2">Click here to Show/Hide Panel</p>
+    <div class="panel2">
+        <p>This is simple jQuery Show/Hide Example by Crunchify...</p>
+        <p>Click below Show/Hide again to Toggle visibility...</p>
+    </div>
+ </li>
+ <li>
+  <p class="flip3">Click here to Show/Hide Panel</p>
+    <div class="panel3">
+        <p>This is simple jQuery Show/Hide Example by Crunchify...</p>
+        <p>Click below Show/Hide again to Toggle visibility...</p>
+    </div>
+ </li>
+ <li>
+  <p class="flip4">Click here to Show/Hide Panel</p>
+    <div class="panel4">
+        <p>This is simple jQuery Show/Hide Example by Crunchify...</p>
+        <p>Click below Show/Hide again to Toggle visibility...</p>
+    </div>
+ </li>
+ </ul>
+    <br>
+   
+ 
+    <br>
+    <br>
+    <div align="center">
+        <div
+            style="font-family: verdana; padding: 10px; border-radius: 10px; border: 3px solid #EE872A; width: 50%; font-size: 12px;">
+ 
+            Simple jQuery Example by by <a href='http://crunchify.com'>Crunchify</a>.
+            Click <a
+                href='http://crunchify.com/category/java-web-development-tutorial/'>here</a>
+            for more than 150 examples.<br>
+        </div>
+    </div>
+ 
+</body>
+</html>
